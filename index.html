@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="cabecario">
+    <h1>APOSTAS GOL</h1>  
+    <H2>FAÇA AQUI SUAS APOSTAS PARA O PROXIMO JOGO!</H2>
+    </div>
+    <form id="formulario">
+        <input type="text" id="usuario" required placeholder="Seu usuario"/> 
+        <input type="number" id="valor" required placeholder="Valor para aposta"/> 
+        <input type="number" id="saldo" required placeholder="Seu saldo"/> 
+        <div class="opcoes">
+            <div class="opcao1">
+        <label for="time1">São Paulo</label>
+        <input type="radio" name="escolha" id="time1" required>
+            </div>
+            <div class="opcao2">
+        <label for="time2">Corinthians</label>
+        <input type="radio" name="escolha" id="time2" required> 
+            </div>
+        </div>
+        <button type="submit">APOSTAR!</button>
+    </form>
+
+    <p class="error">Ops! Voce não tem saldo suficiente para apostar esse valor.</p>
+    <p class="sucesso">Apostas enviadas, Boa sorte!!</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
